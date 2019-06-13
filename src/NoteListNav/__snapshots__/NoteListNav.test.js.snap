@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoteListNav component renders a .NoteListNav by default 1`] = `
+<div
+  className="NoteListNav"
+>
+  <ul
+    className="NoteListNav__list"
+  />
+  <div
+    className="NoteListNav__button-wrapper"
+  >
+    <NavAddButton
+      className="NoteListNav__add-folder-button"
+      tag={[Function]}
+      to="/add-folder"
+      type="button"
+    >
+      Add Folder
+      <br />
+    </NavAddButton>
+  </div>
+</div>
+`;
+
+exports[`NoteListNav component renders a link in ul for each folder in array 1`] = `
+<ul
+  className="NoteListNav__list"
+/>
+`;

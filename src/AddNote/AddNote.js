@@ -37,7 +37,7 @@ class AddNote extends Component {
       content: content.value,
       modified: Date.now()
     }
-    const url = 'http://localhost:9090/notes';
+    const url = 'https://nameless-temple-32242.herokuapp.com/notes';
     const options = {
       method: 'POST',
       headers: {

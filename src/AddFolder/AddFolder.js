@@ -21,7 +21,7 @@ class AddFolder extends Component {
     const folder = {
       name: name.value
     }
-    const url = 'https://nameless-temple-32242.herokuapp.com/folders'
+    const url = 'https://nameless-temple-32242.herokuapp.com/api/folders'
     this.setState({ error:null })
     const options = {
     method: 'POST',

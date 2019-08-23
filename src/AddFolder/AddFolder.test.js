@@ -1,11 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
-import AddFolder from './AddFolder'
+import ReactDOM from 'react-dom';
+import AddFolder from './AddFolder';
 
-describe(`AddItemForm component`, () => {
-  it('renders the complete form', () => {
-    const wrapper = shallow(<AddFolder />)
-    expect(toJson(wrapper)).toMatchSnapshot()
-  })
-})
+it('renders without crashing', () => {
+  const div = document.createElement('div');
+  const props = {
+    history: {
+      push: () => {},
+    },
+  }
+  ReactDOM.render(<AddFolder {...props} />, div);
+  ReactDOM.unmountComponentAtNode(div);
+});

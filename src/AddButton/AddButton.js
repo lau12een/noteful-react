@@ -2,7 +2,7 @@ import React from 'react'
 import './AddButton.css'
 
 export default function NavAddButton(props) {
-  const { tag, className, childrenm, ...otherProps } = props
+  const { tag, className, children, ...otherProps } = props
 
   return React.createElement(
     props.tag,
